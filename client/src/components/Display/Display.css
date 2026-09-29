@@ -1,0 +1,59 @@
+.display {
+  min-height: 112px;
+  padding: 14px 15px 11px;
+  background: #f7f8f2;
+  border: 1px solid #e2e6dc;
+  border-radius: 4px;
+}
+
+.display-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.display input {
+  width: 100%;
+  padding: 0;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-family: "DM Mono", monospace;
+  font-size: 21px;
+}
+
+.display input:focus-visible {
+  outline-offset: 4px;
+}
+
+.display input::placeholder {
+  color: #adb5a9;
+}
+
+.result-line {
+  display: flex;
+  min-height: 28px;
+  align-items: end;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.result-line output {
+  overflow-wrap: anywhere;
+  color: var(--green);
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.result-line.has-error {
+  align-items: center;
+  color: #a24434;
+  font-size: 11px;
+}
